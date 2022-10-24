@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.urania{
+    width: 150px;
+}
+.main_menu{
+    margin-bottom: 0;
+    padding: 0;
+    
+   
+    
+}
+.main_menu li {
+ list-style: none;
+ font-size: 1rem;
+ margin-left: 0.2rem;
+ color: rgb(15, 15, 129);
+ 
+ 
+ 
+}
+
+/* mobile_first*/
+
+#header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    background-color: rgba(255, 255, 251, 0.377);
+    
+    
+    
+
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+.logo{
+    justify-self: center;
+}
+.menu{
+    justify-self: center;
+   
+   
+}
+
+
+ul li a {
+    font-size: 10px;
+    color: black
+    
+}
+li :hover{
+    color: rgb(15, 15, 129);
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+
+}
+
+.back{
+    overflow: hidden;
+    border-top: 2px rgb(146, 141, 141) solid;
+    margin-top: 10px;
+    border-bottom: 2px rgb(146, 141, 141) solid;
+}
+.piezas_h1{
+    font-size: 40px;
+    color: rgb(15, 15, 129);
+}
+.piezas_h2{
+    font-size: 27px;
+    margin-top: -5px;
+    color: rgb(15, 15, 129);
+}
+.div_novedades{
+ position: absolute;
+ margin-top: 140px;
+ margin-left: 60px;
+}
+
+.novedades_1{
+    font-size: 12px;
+   
+}
+.novedades_2{
+    border-top: 1px rgb(146, 141, 141) solid;
+    font-size: 12px;
+    
+}
+.novedades_t{
+    position: absolute;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(146, 141, 141, 0.493);
+    margin-top: 50px;
+    margin-left: -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   
+}
+
+.img_dripper{
+    width: 100%;
+   
+   
+    
+}
+.img_cup{
+    width: 100%;
+   
+}
+.dripper_descripcion{
+    position: relative;
+    top: 250px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(207, 205, 205, 0.562);
+   
+}
+.cup_descripcion{
+    position: relative;
+    top: 250px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(207, 205, 205, 0.562);
+    
+}
+#footer
+{display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+}
+    
+.footer_div{
+  height: 150px;
+  border-top: 2px rgb(146, 141, 141) solid;
+    
+}
+.footer_ul{
+    display: flex;
+    list-style: none;
+    font-size: 10px;
+    color: black;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    
+}
+.footer_ul :hover{
+    color: rgb(15, 15, 129);
+    
+}
+
+.ig_logo{
+    width: 30px;
+}
+/* sobre nosotros*/
+#grilla{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.photo_size{
+        width: 100%;
+    }
+.photo_size1{
+        width: 100% ;
+    }     
+
+/* tablet y desktop */
+@media (min-width: 768px ){
+    .nav{
+        grid-template-columns: auto auto;
+
+        justify-content: space-around;
+        
+      
+    }
+    .main_menu{
+        display: flex;
+        justify-content: space-between;
+            
+    }
+    ul li a {
+        font-size: 14px;
+        
+    }
+}
+
+@media (min-width: 1028px )
+{
+    .urania{
+        width: 180px;
+    }
+    .main_menu{
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        margin-top: 55px;
+    }        
+    ul li a {
+        font-size: 16px;
+        justify-content: space-between;
+        
+    }
+    .piezas_h1{
+        font-size: 45px;
+        color: rgb(15, 15, 129);
+    }
+    .piezas_h2{
+        font-size: 30px;
+        margin-top: -5px;
+        color: rgb(15, 15, 129);
+    }    
+    .div_novedades{
+        margin-top: 300px;
+        margin-left: 700px;
+       }
+   
+    .img_dripper{
+        width: 600px;
+        
+        transition: transform .2s;
+    }
+    
+    .img_dripper:hover {
+        transform: scale(1.1);
+        
+
+    }
+    .img_cup{
+        width: 600px;
+        
+        transition: transform .2s;
+   
+    }
+    .img_cup:hover {
+        transform: scale(1.1);
+        
+
+    }
+    .novedades_1{
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            align-items: center;
+            margin-right: 10px;
+           
+
+            
+    }
+    .novedades_2{
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+    }            
+        
+    .dripper_descripcion{
+       background-color: white; 
+       width: 50%;
+       top: 0px;
+       justify-content: center;
+       font-size: 25px;
+       margin-left: 20px;
+       
+       
+        
+    }
+    .cup_descripcion{
+        background-color: white; 
+        width: 50%;
+        top: 0px;
+        justify-content: center;
+        font-size: 25px;
+        margin-left: 20px;
+        order: 1;
+    }
+    .novedades_d{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .footer_ul{
+        font-size: 15px;
+        
+        
+     
+    }
+    /* sobre nosotros*/
+#grilla_sn{
+    display: grid;
+    grid-template-areas: 
+    "cup space  descripcion"
+    "cup plato  descripcion"
+    "bowl bowl  descripcion";
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-left: 40px;
+    
+    
+ }
+ 
+
+ 
+ section#space{
+     grid-area: space;
+     background-color: rgba(207, 205, 205, 0.562);
+     height: 200px;
+ }
+ section#descripcion{
+     grid-area: descripcion;
+     width: 400px;
+     margin-left: 20px;
+     
+     
+
+ }
+ section#plato{
+     grid-area: plato;
+     height: 300px;
+     justify-content: space-between;
+     overflow: hidden;
+ }
+
+ section#cup{
+     grid-area: cup;
+    background-color: rgba(207, 205, 205, 0.562);
+ }
+
+ section#bowl{
+     grid-area: bowl;
+     background-color: rgba(207, 205, 205, 0.562);
+     justify-content: right;
+     height: 300px;
+    }
+
+    .photo_size{
+            width: 300px;
+            
+        }
+   
+        
+    .photo_size1{
+            width: 500px ;
+        } 
+       
+    .section_sobre_nosotros{
+        margin-top: 180px;
+        padding: 20px;
+    }
+    .sn_titulo{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .sn_parrafo{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
