@@ -5,124 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piezas</title>
+ 
+   
+        <!-- favicon--> 
+        <link rel="icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-32x32.png" sizes="32x32" /><link rel="icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-192x192.png" sizes="192x192" /><link rel="apple-touch-icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-180x180.png" />
+        <!-- fuente--> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+         <!-- iconos--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,300;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilos.css">
-    <link rel="icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-32x32.png" sizes="32x32" /><link rel="icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-192x192.png" sizes="192x192" /><link rel="apple-touch-icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-180x180.png" />
 </head>
-<body>
-    <header>  
-        <div>
-            <a href="../index.html">
-                <img class="logo" src="../imagenes/logo/logo-urania.png" alt="">
-            </a>
-            <menu id="subir"></menu>
-        </div>  
-       
-        <nav class="nav_section_div">
-            <ul>
-                <li class="header_nav_li_p"><a class="menu" href="#bowls">Bowls</a></li>
-                <li class="header_nav_li_p"><a class="menu" href="#platos">Platos</a></li>
-                <li class="header_nav_li_p"><a class="menu" href="#tazas">Tazas</a></li>  
-                <li class="header_nav_li_p"><a class="menu" href="#accesorios">Accesorios para café</a></li>
-                <li class="header_nav_li_p"><a class="menu" href="#macetas">Macetas</a></li>
-            </ul>    
-        </nav>                
-    </header>           
+<body id="body_grid">
+    <header id="header"> 
+        <nav class="nav"> 
+            <!-- div logo--> 
+            <div class="logo">
+                <a href="../index.html">
+                    <img class="urania" src="../imagenes/logo/logo-urania.png" alt="">
+                </a>
+            </div>    
+             <!-- div container listas-->       
+            <div class="menu">  
+                <ul class=" main_menu">                  
+                    <li class="series"><a href="./series.html">Series</a></li>
+                    <li class="sobre_nosotros"><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+                    
+                    <li class="contacto"><a href="./contacto.html">Contactanos</a></li>
+                    <li class="buscar">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </li>
+                </ul>    
+            </div>            
+         </nav>       
+    </header>  
+      <!-- main-->            
        <main>
-            <section>
+            <section class="section_piezas">
                 <article>
                     <div>
-                        <section id="bowls" class=""></section>
-                        <h2 class="h2_piezas_n">BOWLS Y CUENCOS</h2>
-                        <div>
-                            <p class="piezas_t">Bowl medium</p>
-                            <div class="piezas_p">
-                                <p >Perfecto para acompañar todas tus comidas.</p>
-                                <p>Diámetro 15cm.</p>
-                                <p>Altura 9cm</p>
-                            </div>
-                            
-                            <img class="pieza_foto_size" src="../imagenes/bowl/BOWL LIMBADI MEDIUM.jpg" alt="bowl_medium">
-                        </div>
-                        
-                    <div>
-                        <p class="piezas_t">Bowl mini</p>
-                        <div class="piezas_p">
-                            <p>Perfecto para acompañar tus postres, helados, ensaladas de frutas o desayunos.</p>
-                            <p>Diámetro 11cm.</p>
-                            <p>Altura 8cm</p>
-                        </div>
-                        
-                        <img class="pieza_foto_size" src="../imagenes/bowl/MINI BOWL LIMBADI1.jpg" alt="bowl_mini">
-                        </div>
-                    </div>
+                        <h2 class="h2_piezas_n">Bowls y Cuencos.</h2>
             
                     <div>
-                        <p class="piezas_t">Cuencos</p>
-                        <p class="piezas_p">Perfecto para acompañar tus postres, helados, ensaladas de frutas o desayunos.</p>
-                    
-                        <img class="pieza_foto_size" src="../imagenes/bowl/CYMERA_20220414_164231.jpg" alt="cuenco">
+                        <div class="piezas_desc">
+                            <p class="piezas_t">Bowl mini</p>
+                            <div class="piezas_p">
+                                <p>Perfecto para acompañar tus postres, helados, ensaladas de frutas o desayunos.</p>
+                                <p>Diámetro 11cm.</p>
+                                <p>Altura 8cm</p>
+                            </div>
+                        </div>
+                        <img class="pieza_foto_size" src="../imagenes/bowl/MINI BOWL LIMBAD2.jpg" alt="bowl_mini">
+                        </div>
+                        <div>
+                            <div class="piezas_desc">
+                                <p class="piezas_t">Bowl medium</p>
+                                <div class="piezas_p">
+                                    <p >Perfecto para acompañar todas tus comidas.</p>
+                                    <p>Diámetro 15cm.</p>
+                                    <p>Altura 9cm</p>
+                                </div>
+                            </div>
+                            <img class="pieza_foto_size" src="../imagenes/bowl/BOWL LIMBADI MEDIUM.jpg" alt="bowl_medium">
+                        </div>
+            
+                    <div>
+                        <div class="piezas_desc">
+                            <p class="piezas_t">Cuencos</p>
+                            <p class="piezas_p">Perfecto para acompañar tus postres, helados, ensaladas de frutas o desayunos.</p>
+                        </div>  
+                        <img class="pieza_foto_size" src="../imagenes/bowl/BOWL MONTJIUC COBALTO.jpg" alt="cuenco">
                     </div>
-                    <div class="menu"><a href="#subir">Volver</a></div> 
+                    
                 </article>
                 <article>
                     <div>
-                        <section id="platos" class=""></section>
-                        <h2 class="h2_piezas_n">PLATOS</h2>
+                        
+                        <h2 class="h2_piezas_n">Platos.</h2>
+                        
                         <div>
-                            <p class="piezas_t">Platito</p>
-                            <div class="piezas_p">
-                                <p >Serví tus comidas preferidas en este plato íntegramente realizado a mano.</p>
-                                <p>Diámetro 16cm</p>
-                            </div class="piezas_p">
+                            <div class="piezas_desc">
+                                <p class="piezas_t">Platito</p>
+                                <div class="piezas_p">
+                                    <p >Serví tus comidas preferidas en este plato íntegramente realizado a mano.</p>
+                                    <p>Diámetro 16cm</p>
+                                </div>
+                            </div>
                             <img class="pieza_foto_size" src="../imagenes/platos/PLATO MITTE SMALL.jpg" alt="plato_small">
                         </div>
                         
                         <div>
-                            <p class="piezas_t">Plato</p>
-                            <p class="piezas_p">Disfrutá de todas tus comidas en este plato realizado en torno alfarero.</p>
-                        <img class="pieza_foto_size" src="../imagenes/platos/PLATO MITTE HARBOR.jpg" alt="plato">
+                            <div class="piezas_desc">
+                                <p class="piezas_t">Plato</p>
+                                <p class="piezas_p">Disfrutá de todas tus comidas en este plato realizado en torno alfarero.</p>
+                            </div>
+
+                            <img class="pieza_foto_size" src="../imagenes/platos/PLATO MITTE HARBOR.jpg" alt="plato">
                         </div>
-                        <div class="menu"><a href="#subir">Volver</a></div> 
+                        <div>
+                            <div class="piezas_desc">
+                                <p class="piezas_t">Plato Hondo</p>
+                                <p class="piezas_p">Disfrutá de todas tus comidas en este plato realizado en torno alfarero.</p>
+                            </div>
+
+                            <img class="pieza_foto_size" src="../imagenes/platos/PLATO HONDO POMPEII1.jpg" alt="plato_hondo">
+                        </div>
+                        
                     </div>
                 </article>
                 <article>
                     <div>
                         <section id="tazas" class=""></section>
-                        <h2 class="h2_piezas_n">TAZAS</h2>
+                        <h2 class="h2_piezas_n">Tazas.</h2>
                         <div>
+                            <div class="piezas_desc">
                             <p class="piezas_t">Set Taza y Plato</p>
                             <p class="piezas_p">Set de plato y taza ideal para disfrutar de todos tus desayunos y meriendas.</p>
-                            <img class="pieza_foto_size" src="../imagenes/tazas/SET_MONTJUIC_COBALTO.jpg" alt="set_tazas">
-                        </div>                       
-                        <div>
-                            <p class="piezas_t">Set Cup</p>
-                            <p class="piezas_p">Set de plato y cup ideal para disfrutar de todos tus desayunos y meriendas.</p>
-                            <img class="pieza_foto_size" src="../imagenes/tazas/CYMERA_20220910_115619.jpg" alt="set_cup">
                         </div>
-                        <div class="menu"><a href="#subir">Volver</a></div> 
+                            <img class="pieza_foto_size" src="../imagenes/tazas/SET_MONTJUIC_COBALTO.jpg" alt="set_tazas">
+                        </div>  
+                        <div>
+                            <div class="piezas_desc">
+                                <p class="piezas_t">Set Cup</p>
+                                <p class="piezas_p">Set de plato y cup ideal para disfrutar de todos tus desayunos y meriendas.</p>   
+                            </div>
+                             <a href="./cups.html"><img class="pieza_foto_size" src="../imagenes/tazas/CYMERA_20220910_115619.jpg" alt="set_cup"></a>
+                        
+                        </div>                     
+                        
+                        <div>
+                            <div class="piezas_desc">
+                                <p class="piezas_t">Tazón</p>
+                                <p class="piezas_p">Disfrutá de tu infusión preferida en este tazón realizado en torno alfarero.</p>   
+                            </div>
+                            <img class="pieza_foto_size" src="../imagenes/tazas/TAZON LBLACK.jpg" alt="set_cup">
+                        
+                        </div>
                     </div>
                 </article>
                 <article>
                     <div>
-                        <section id="accesorios" class=""></section>
-                        <h2 class="h2_piezas_n">ACCESORIOS PARA CAFÉ</h2>
-                        <div>
+                        
+                        <h2 class="h2_piezas_n">Accesorios para Café.</h2>
+                        <div class="piezas_desc">
                             <p class="piezas_t">Dripper</p>
                             <p class="piezas_p">Dripper realizado en torno alfarero ideal para disfrutar de un buen café filtrado.</p>
-                            <img class="pieza_foto_size" src="../imagenes/tazas/DRIPPER MITTE.jpg" alt="dripper">
                         </div>
+                            <img class="pieza_foto_size" src="../imagenes/tazas/DRIPPER MITTE.jpg" alt="dripper">
+                        
                     </div>
-                    <div class="menu"><a href="#subir">Volver</a></div> 
+                    
+                </article>
+              
+                <article>
+                    <div>
+                        <h2 class="h2_piezas_n">Macetas.</h2>
+                        <div>
+                        <div class="piezas_desc">
+                            <p class="piezas_t">Maceta</p>
+                            <p class="piezas_p">Realzá tus plantas con esta maceta realizada en torno alfarero.</p>
+                        </div>
+                            <img class="pieza_foto_size" src="../imagenes/tazas/MACETA_SINTRA.jpg" alt="maceta">
+                        </div>
+                        
+                    </div>
+
                 </article>
                 <article>
                     <div>
-                        <section id="macetas" class=""></section>
-                        <h2 class="h2_piezas_n">MACETAS</h2>
+                        <h2 class="h2_piezas_n">Porta Utensilios.</h2>
                         <div>
-                            <p class="piezas_t">Maceta</p>
-                            <p class="piezas_p">Realzá tus plantas con esta maceta realizada en torno alfarero.</p>
-                            <img class="pieza_foto_size" src="../imagenes/tazas/MACETA_SINTRA.jpg" alt="maceta">
+                        <div class="piezas_desc">
+                            <p class="piezas_t">Porta utensilios</p>
+                            <p class="piezas_p">Organizá los utensilios de cocina con este práctico contenedor.</p>
                         </div>
+                            <img class="pieza_foto_size" src="../imagenes/tazas/PORTAUTENSILLOS_MONTJIUC_BEIGE.jpg" alt="porta utensilios">
+                        </div>
+                        
                     </div>
 
                 </article>
@@ -130,17 +193,23 @@
        </main> 
        <div class="menu"><a href="#subir">Subir</a></div> 
 
-       <footer>
-            <div class="footer_div">
-                <ul class="footer_ul">
-                    <li class="footer_li"><a href="./contacto.html">Contactanos</a></li>
-                    <li class="footer_li">Seguinos</li>
-                    <li class="footer_li">
-                        <a class="instagram_logo" href="https://www.instagram.com/urania_ceramicas/" target="_blank">
-                            <img class="logo" src="../imagenes/logo/pngwing.com.png" alt=""></a>
-                    </li>
-                </ul> 
-            </div> 
-        </footer>
+       <div class="footer_div">
+        <ul class="footer_ul">
+            <li class="footer_li">Seguinos</li>
+            <li class="footer_li">
+                <a class="instagram_logo" href="https://www.instagram.com/urania_ceramicas/" target="_blank">
+                    <img class="ig_logo" src="../imagenes/logo/pngwing.com.png" alt=""></a>         
+            </li>
+            <li class="footer_li">Contactanos</li>
+            <li class="footer_li">
+                <span class="material-symbols-outlined">
+                    send
+                    </span>
+            </li>
+        </ul> 
+    </div> 
+</footer>
+    
+  
 </body>
 </html>
