@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urania Ceramicas</title>
+    <title>Contacto Urania</title>
  
     <!-- favicon--> 
     <link rel="icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-32x32.png" sizes="32x32" /><link rel="icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-192x192.png" sizes="192x192" /><link rel="apple-touch-icon" href="https://tiendaurania.com/wp-content/uploads/2021/11/cropped-logo-180x180.png" />
@@ -17,53 +17,74 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,300;0,500;1,300&display=swap" rel="stylesheet">
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
+  <!-- Hoja de Estilos -->  
 <link rel="stylesheet" href="../estilos.css">
 
 </head>
-<body id="body_grid">
+<body>
     <header id="header"> 
-        <nav class="nav"> 
-            <!-- div logo--> 
-            <div class="logo">
-                <a href="../index.html">
-                    <img class="urania" src="../imagenes/logo/logo-urania.png" alt="">
-                </a>
-            </div>    
-             <!-- div container listas-->       
-            <div class="menu">  
-                <ul class=" main_menu">                  
-                    <li class="series"><a href="./series.html">Series</a></li>
-                    <li class="piezas"><a href="./piezas.html">Piezas</a></li>
-                    <li class="sobre_nosotros"><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-                    
-                    <li class="buscar">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </li>
-                </ul>    
-            </div>            
-         </nav>       
+       <!-- Nav con Bootstrap -->    
+       <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid mx-3">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../imagenes/logo/logo-urania.png" alt="logo" width="170">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./series.html">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./piezas.html">Piezas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>  
         <main>
-            <div class="container">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Direccion de Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                
-                <button type="submit" class="btn btn-default">Enviar</button>
-                </form>
-                
-                    
-                
-                </div> 
-            </div>
+     <div class="container">   
+    <div class="form-row mt-1" >
+      <div class="col-md-4 mb-3">
+          <label for="validarNombre">Nombre:<span class="red">*</span></label>
+          <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+          <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarEmail">Email:<span class="red">*</span></label>
+          <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+      </div>
+  </div>
+
+
+  <div class="form-group">
+      <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+      <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="6" min="25" required></textarea>
+  </div>
+
+  <div class="form-group mb-10">
+      <button class="btn btn-light" type="submit" name="submit">Enviar</button>
+      
+  </div>
+</div>  
+
+</form>
         </main>
 
     </main>
@@ -78,13 +99,16 @@
                 </li>
                 <li class="footer_li">Contactanos</li>
                 <li class="footer_li">
+                    <a href="./contacto.html">
                     <span class="material-symbols-outlined">
                         send
-                        </span>
+                        </span></a>
                 </li>
             </ul> 
+            
         </div> 
     </footer>
+    
 
    <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>     
