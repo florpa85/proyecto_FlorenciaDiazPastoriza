@@ -6,15 +6,7 @@
 /* mobile_first*/
 
 
-.main_menu{
-    margin-bottom: 0;
-    padding: 0;
-    
-   
-    
-}
 header{
-    
     position: sticky;
     top: 20px;
     z-index: 100;
@@ -23,18 +15,14 @@ header{
     
 
 }
-
-.main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-
+body{
+    width: 100vw;
 }
+
 
 .back{
     overflow: hidden;
-    border-top: 2px rgb(146, 141, 141) solid;
-    margin-top: 10px;
+    margin-top: 15px;
     border-bottom: 2px rgb(146, 141, 141) solid;
     
 }
@@ -63,12 +51,9 @@ header{
     
 }
 
-
 .img_dripper{
     width: 100%;
-    margin-top: -110px;
-   
-   
+    margin-top: -110px;  
     
 }
 .img_cup{
@@ -92,53 +77,24 @@ header{
     background-color: rgba(207, 205, 205, 0.562);
     
 }
-
-
-
-
-.ig_logo{
-    width: 30px;
+.img-ig{
+    width: 20px;
+   
 }
 /* sobre nosotros*/
-.main_sobre_nosotros{
-    display: flex;
-}
 
-
-.section_sobre_nosotros{
-    width: 300px;
-    padding-top: 10px;
-    margin-left: 30px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    
-}
 .sn_titulo{
     font-size: 50px;
 } 
 .sn_parrafo{
     font-size: 12px;
 }
-.descripcion_sn{
-    width: 350px;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    
-}
-.container{
-    padding: 30px;
-}
+
 
 /* cups*/   
-.main_section_cups{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 20px;
-}
+
 .section_cups{
     width: 100%;
-
 
 }
 .cups_t{
@@ -148,18 +104,19 @@ header{
     font-size: 12px;
     width: 250px;
     margin-top: 5px;
-
 }
-.cups_desc{
-    padding: 25px;
 
-}
 .cup_name{
     font-size: 15px;
     position: absolute;
     padding-top: 20px;
     padding-left: 25px;
     
+}
+
+/* Bowls*/
+.img-responsive{
+    width: 100%;
 }
 /* Series*/
 .section_series{
@@ -192,15 +149,12 @@ header{
 }
 .h2_piezas_n{
     font-size: 45px;
-
    
-    
 }
-.container{
-   margin-top: 100px;
-}
+
 
 @media (max-width: 768px ){
+     /* Index oculto mobile*/
     .novedades_t{
     display: none;
        
@@ -208,7 +162,7 @@ header{
     .novedades_t1{
         display: none;
            
-        }
+   }
    
     /* Series oculto mobile*/
     .serie_photo_size{
@@ -223,25 +177,15 @@ header{
     }
    
 }
-@media (max-width: 767px ){
-       /* Sobre Nosotros oculto mobile*/
- .container{
-    display: none;
-}
-   
-    }
- 
-        
-
-    
 
 /* tablet */
+
 @media (min-width: 768px  ){
     /* Index tablet */
+  
     .novedades_1{
         font-size: 14px;
-        
-       
+    
     }
     .novedades_2{    
         font-size: 14px;    
@@ -272,49 +216,10 @@ header{
         background-color: rgba(207, 205, 205, 0.562);
         
     }
-    #footer
-    {display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        row-gap: 10px;
-    }
-        
-    .footer_div{
-      height: 150px;
-      border-top: 2px rgb(146, 141, 141) solid;
-        
-    }
-    .footer_ul{
-        display: flex;
-        list-style: none;
-        font-size: 10px;
-        color: black;
-        padding-top: 50px;
-        justify-content: space-evenly;
-        
-    }
-    .footer_ul :hover{
-        color: rgb(15, 15, 129);
-        
-    }
-    
-    .ig_logo{
-        width: 30px;
-
-    }
-
-    
+ 
     /* Sobre Nosotros Tablet */
-    .main_sobre_nosotros{
-        margin-bottom: 100px;
-        margin-top: 100px;
-    }
-    .section_sobre_nosotros{
-        width: 600px;
-    }
+ 
 
-  
-    
      /* Cups Tablet */
    .section_cups{
     width: 80%;
@@ -341,15 +246,10 @@ header{
     margin-left: 30px;
     font-size: 50px;
    }
-
 }
-
 /* desktop */
 @media (min-width: 1024px ){
 
-
-    
-    
     .piezas_h1{
         font-size: 45px;
         color: rgb(15, 15, 129);
@@ -376,30 +276,7 @@ header{
     
     .img_dripper:hover {
         transform: scale(1.1);
-        
 
-    }
-    .novedades_t{
-        position: absolute;
-        justify-content: center;
-        padding: 20px;
-        background-color: rgba(146, 141, 141, 0.493);
-        width: 100px;
-        margin-top: 50px;
-       margin-left: 70px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-       
-    }
-    .novedades_t1{
-        position: absolute;
-        justify-content: center;
-        padding: 20px;
-        background-color: rgba(146, 141, 141, 0.493);
-        width: 100px;
-        margin-top: 50px;
-       margin-left: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     .img_cup{
         width: 600px;
@@ -412,18 +289,39 @@ header{
     }
     .img_cup:hover {
         transform: scale(1.1);
-        
-
+    }    
+    .novedades_t{
+        position: absolute;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgba(146, 141, 141, 0.493);
+        width: 100px;
+        margin-top: 50px;
+       margin-left: 70px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;   
     }
+    .novedades_t1{
+        position: absolute;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgba(146, 141, 141, 0.493);
+        width: 100px;
+        margin-top: 50px;
+       margin-left: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    
+    .novedades_d{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
     .novedades_1{
             display: flex;
             flex-direction: row;
             align-content: space-between;
             align-items: center;
-            margin-right: 10px;
-           
-
-            
+            margin-right: 10px;        
     }
     .novedades_2{
             display: flex;
@@ -431,18 +329,14 @@ header{
             align-content: space-between;
             align-items: center;
             margin-left: 10px;
-    }            
-        
+    }                 
     .dripper_descripcion{
        background-color: white; 
        width: 50%;
        top: 0px;
        justify-content: center;
        font-size: 25px;
-       margin-left: 20px;
-       
-       
-        
+       margin-left: 20px;   
     }
     .cup_descripcion{
         background-color: white; 
@@ -453,81 +347,47 @@ header{
         margin-left: 20px;
         order: 1;
     }
-    .novedades_d{
-        font-size: 16px;
-        margin-top: 8px;
-    }
-    .footer_ul{
-        font-size: 15px;
-        
-        
-     
-    }
+
     /* sobre nosotros*/
-    .section_sobre_nosotros{
-        width: 800px;
-        padding-top: 100px;
-        margin-left: 50px;
-        
-    }
     .sn_titulo{
         font-size: 50px;
     } 
     .sn_parrafo{
         font-size: 12px;
     }
-    .descripcion_sn{
-        width: 350px;
-        margin-top: 100px;
-        margin-bottom: 150px;
-        
-    }
-    .container{
-        padding: 30px;
-    }
 
-    
     /* cups*/   
-.main_section_cups{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    margin-left: 80px;
-    grid-row-gap: 20px;
-
-}
-.section_cups{
-    width: 400px;
-    transition: transform .2s;
-}
-.section_cups:hover{
-    transform: scale(1.1);
+    .section_cups{
+        width: 400px;
+        transition: transform .2s;
     }
-.cups_t{
-    font-size: 50px;
-    padding-top: 100px;
-    padding-left: 10px;     
+    .section_cups:hover{
+        transform: scale(1.1);
+        }
+    .cups_t{
+        font-size: 50px;
+        padding-top: 100px;
+        padding-left: 10px;     
+    }
+    .cups_d{
+        font-size: 14px;
+        width: 400px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .cup_name{
+        position: absolute;
+        padding-top: 190px;
+        padding-left: 15px;
+        background-color: rgba(207, 205, 205, 0.562);
+        font-size: 18px;
+        color: black;
 
-}
-.cups_d{
-    font-size: 14px;
-    width: 400px;
-    padding-left: 10px;
-    padding-top: 5px;
-}
-.cup_name{
-    position: absolute;
-    padding-top: 190px;
-    padding-left: 15px;
-    background-color: rgba(207, 205, 205, 0.562);
-    font-size: 18px;
-    color: black;
+    }
+    .cup_name:hover{
+        color: rgb(15, 15, 129);
 
-}
-.cup_name:hover{
-    color: rgb(15, 15, 129);
-
-}
+    }
 /* Series*/
 .section_series{
     display: grid;
